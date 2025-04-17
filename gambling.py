@@ -36,19 +36,19 @@ def gamble():
                 print(f"New Balance: {new_money}$")  # Display the updated balance after losing
         else:
             print("Not enough money, come back another time.")
-            time.sleep(3)  # Wait for 3 seconds before exiting
+            time.sleep(3) 
             sys.exit()
     elif user_input == 'n':
         print("You made a good decision.")
     else:
         print("Invalid input. Please enter 'y' or 'n'.")
 
-# Main loop to repeatedly ask if the user wants to gamble or exit
+# Main loop to repeatedly ask if YOU want to gamble or exit
 while True:
     gamble()  # Run the gamble function once
     again = input("Do you want to gamble again? (y/n): ").lower()
     
     if again == 'n':
         print("Come back again. You know you will.")
-        time.sleep(3)  # Wait for 3 seconds before exiting
-        break  # Exit the loop if the user does not want to gamble again
+        time.sleep(3)
+        break  # Exit the loop, we all know you'll come back.
